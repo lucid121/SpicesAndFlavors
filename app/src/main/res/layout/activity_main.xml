@@ -120,31 +120,22 @@
         android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.055">
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="392dp"
-            android:layout_height="240dp"
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.497" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -169,34 +160,241 @@
             android:textColor="@color/white"
             android:textSize="26sp"
             android:textStyle="bold" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="245dp"
+        android:layout_width="412dp"
+        android:layout_height="251dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.0">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="407dp"
-            android:layout_height="243dp"
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="83dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
-        <ProgressBar
-            android:id="@+id/progressBar2"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/drinkiconid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/drinkicon" />
+
+            <ImageView
+                android:id="@+id/startericonid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/startericon" />
+
+            <ImageView
+                android:id="@+id/mainiconid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/mainicon" />
+
+            <ImageView
+                android:id="@+id/soupiconid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/soupicon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="413dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36">
+
+            <TextView
+                android:id="@+id/drinktextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Drinks"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/startertextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Starter"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/maintextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Main Dishes"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/souptextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Soup Dishes"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="420dp"
+            android:layout_height="87dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/pizzaiconid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/pizzaicon" />
+
+            <ImageView
+                android:id="@+id/dessericonid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/desserticon" />
+
+            <ImageView
+                android:id="@+id/breakfasticonid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/breakfast" />
+
+            <ImageView
+                android:id="@+id/seafoodiconid"
+                android:layout_width="75dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/greybackground"
+                app:srcCompat="@drawable/seafoodicon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="414dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="2dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/pizzatextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Pizza"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/dessertextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Dessert"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/breakfasttextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="breakfast"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/seafoodtextid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Seafood"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

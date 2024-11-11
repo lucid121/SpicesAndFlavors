@@ -13,7 +13,37 @@
         android:theme="@style/Theme._0ChefsApp"
         tools:targetApi="31">
         <activity
+            android:name=".soup"
+            android:exported="false" />
+        <activity
+            android:name=".dessert"
+            android:exported="false" />
+        <activity
+            android:name=".breakfast"
+            android:exported="false" />
+        <activity
+            android:name=".pizza"
+            android:exported="false" />
+        <activity
+            android:name=".seafood"
+            android:exported="false" />
+        <activity
+            android:name=".main"
+            android:exported="false" />
+        <activity
+            android:name=".starter"
+            android:exported="false" />
+        <activity
+            android:name=".drink"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
